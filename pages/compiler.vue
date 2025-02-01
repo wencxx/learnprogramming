@@ -57,7 +57,7 @@
 <script setup>
 const query = useRoute().query
 
-const language = ref(query.language || "cpp");
+const language = ref("cpp");
 const code = ref(`#include <iostream>
 using namespace std;
 
@@ -86,6 +86,16 @@ onMounted(() => {
     editor.on("change", () => {
       code.value = editor.getValue();
     });
+  }
+
+  if(query && query.language){
+    language.value = query.language
+    code.value = `class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World from RCC");
+    }
+}`
+    editor.setValue(code.value);
   }
 });
 
