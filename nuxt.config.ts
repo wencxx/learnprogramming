@@ -24,8 +24,7 @@ export default defineNuxtConfig({
           src: 'https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/codemirror.min.js',
         },
         {
-          type: 'text/javascript',
-          src: 'https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/mode/python/python.min.js',
+          src: 'https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/mode/javascript/javascript.min.js',
         },
       ],
       link: [

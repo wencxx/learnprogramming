@@ -7,8 +7,14 @@
 
 <script setup>
 useHead({
-  title: 'Programming E-Learning System'
+  title: 'Learn Programming'
 })
 
 const { x, y } = useWindowScroll()
 </script>
+
+<style>
+html {
+  scroll-behavior: smooth;
+}
+</style>

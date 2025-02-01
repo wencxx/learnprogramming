@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full max-w-7xl mx-auto h-full flex flex-col pt-[15dvh] px-5 lg:px-0">
+  <div class="w-full mx-auto h-full flex flex-col pt-[15dvh] px-5 lg:px-10">
     <div>
       <label for="language" class="block font-medium">Select Language:</label>
       <select id="language" v-model="language" class="border rounded p-2" @change="changeLanguage">
@@ -55,7 +55,9 @@
 </template>
 
 <script setup>
-const language = ref("cpp");
+const query = useRoute().query
+
+const language = ref(query.language || "cpp");
 const code = ref(`#include <iostream>
 using namespace std;
 
@@ -73,7 +75,7 @@ onMounted(() => {
   if (!editor && codeInput.value) {
     editor = CodeMirror.fromTextArea(codeInput.value, {
       lineNumbers: true,
-      mode: language.value,
+      mode: language.value === "cpp" ? "text/x-c++src" : "text/x-java",
       theme: "darcula",
     });
 
@@ -122,6 +124,7 @@ const changeLanguage = () => {
         System.out.println("Hello, World from RCC");
     }
 }`
+
   }else{
     code.value = `#include <iostream>
 using namespace std;
@@ -134,7 +137,7 @@ int main() {
 
   if (editor) {
     editor.setValue(code.value); 
-    editor.setOption("mode", language.value); 
+    editor.setOption("mode", language.value === "cpp" ? "text/x-c++src" : "text/x-java");
   }
 }
 </script>
