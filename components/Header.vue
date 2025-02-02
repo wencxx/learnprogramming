@@ -10,7 +10,7 @@
                     <NuxtLink to="#about" class="p-1 hover:border-b-2 border-ter" :class="{ 'border-b-2': $route.hash === '#about' }">About</NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink class="p-1 hover:border-b-2 border-ter">Languages</NuxtLink>
+                    <NuxtLink to="#cppTutorial" class="p-1 hover:border-b-2 border-ter" :class="{ 'border-b-2': $route.hash === '#cppTutorial' }">Languages</NuxtLink>
                 </li>
                 <li>
                     <NuxtLink to="/compiler" class="p-1 hover:border-b-2 border-ter" :class="{ 'border-b-2': $route.path === '/compiler' }">Compiler</NuxtLink>
@@ -32,7 +32,7 @@
                     <NuxtLink to="#about" class="p-1 hover:border-b-2 border-ter" :class="{ 'border-b-2': $route.hash === '#about' }">About</NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink class="p-1 hover:border-b-2 border-ter">Languages</NuxtLink>
+                    <NuxtLink to="#cppTutorial" class="p-1 hover:border-b-2 border-ter" :class="{ 'border-b-2': $route.hash === '#cppTutorial' }">Languages</NuxtLink>
                 </li>
                 <li>
                     <NuxtLink to="/compiler" class="p-1 hover:border-b-2 border-ter" :class="{ 'border-b-2': $route.path === '/compiler' }">Compiler</NuxtLink>
@@ -47,4 +47,10 @@
 
 <script setup>
 const isOpenNav = ref(false)
+
+const route = useRoute()
+
+watch(() => [route.path, route.hash], () => {
+    isOpenNav.value = false;
+});
 </script>

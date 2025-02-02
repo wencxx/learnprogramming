@@ -54,8 +54,10 @@
 
         <UModal v-model="isOpen">
             <div class="p-4 flex flex-col items-center gap-y-3 justify-center">
-                <Icon name="noto:confetti-ball" class="text-6xl" />
-                <h1 class="text-2xl font-semibold uppercase">Congratulatulations</h1>
+                <Icon v-if="totalScore > 6" name="noto:confetti-ball" class="text-6xl" />
+                <Icon v-else name="noto:sad-but-relieved-face" class="text-6xl" />
+                <h1 v-if="totalScore > 6" class="text-2xl font-semibold uppercase">Congratulatulations</h1>
+                <h1 v-else class="text-2xl font-semibold uppercase">Better luck next time</h1>
                 <div class="flex items-center justify-center text-4xl font-bold gap-x-2 border-2 rounded-full h-36 w-36 mt-7">
                     <h2>{{ totalScore }}</h2>
                     <span>/</span>

@@ -1,5 +1,5 @@
 <template>
-    <div class="h-fit shadow-inner-lg bg-[#2e3267] hover:bg-transparent py-20 space-y-10 px-5 lg:px-0">
+    <div id="cppTutorial" class="h-fit shadow-inner-lg bg-[#2e3267] hover:bg-transparent py-20 space-y-10 px-5 lg:px-0">
         <h2 class="text-center text-3xl font-bold">C++ Tutorials</h2>
         <div class="w-full max-w-7xl mx-auto h-fit grid md:grid-cols-2 gap-y-5 gap-x-10">
             <div v-for="tutor in tutorials" :key="tutor.key" class="bg-header rounded shadow-inner-lg h-28 flex flex-col px-5 duration-300 overflow-hidden py-10 gap-y-11" :class="{ 'h-fit': openedTutorial.includes(tutor.key) }" @click="openTutorial(tutor.key)">
