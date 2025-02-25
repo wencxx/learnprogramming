@@ -7,10 +7,10 @@
                     <NuxtLink to="/" class="p-1 hover:border-b-2 border-ter" :class="{ 'border-b-2': $route.hash === '' && $route.path === '/' }">Home</NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="#about" class="p-1 hover:border-b-2 border-ter" :class="{ 'border-b-2': $route.hash === '#about' }">About</NuxtLink>
+                    <NuxtLink :to="{ path: '/', hash: '#about' }" class="p-1 hover:border-b-2 border-ter" :class="{ 'border-b-2': $route.hash === '#about' }">About</NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="#cppTutorial" class="p-1 hover:border-b-2 border-ter" :class="{ 'border-b-2': $route.hash === '#cppTutorial' }">Languages</NuxtLink>
+                    <NuxtLink :to="{ path: '/', hash: '#cppTutorial' }" class="p-1 hover:border-b-2 border-ter" :class="{ 'border-b-2': $route.hash === '#cppTutorial' }">Languages</NuxtLink>
                 </li>
                 <li>
                     <NuxtLink to="/compiler" class="p-1 hover:border-b-2 border-ter" :class="{ 'border-b-2': $route.path === '/compiler' }">Compiler</NuxtLink>
@@ -29,10 +29,10 @@
                     <NuxtLink to="/" class="p-1 hover:border-b-2 border-ter" :class="{ 'border-b-2': $route.hash === '' && $route.path === '/' }">Home</NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="#about" class="p-1 hover:border-b-2 border-ter" :class="{ 'border-b-2': $route.hash === '#about' }">About</NuxtLink>
+                    <NuxtLink :to="{ path: '/', hash: '#about' }" class="p-1 hover:border-b-2 border-ter" :class="{ 'border-b-2': $route.hash === '#about' }">About</NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="#cppTutorial" class="p-1 hover:border-b-2 border-ter" :class="{ 'border-b-2': $route.hash === '#cppTutorial' }">Languages</NuxtLink>
+                    <NuxtLink :to="{ path: '/', hash: '#cppTutorial' }" class="p-1 hover:border-b-2 border-ter" :class="{ 'border-b-2': $route.hash === '#cppTutorial' }">Languages</NuxtLink>
                 </li>
                 <li>
                     <NuxtLink to="/compiler" class="p-1 hover:border-b-2 border-ter" :class="{ 'border-b-2': $route.path === '/compiler' }">Compiler</NuxtLink>

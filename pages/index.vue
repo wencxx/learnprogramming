@@ -5,10 +5,10 @@
             <div class="lg:w-3/5 space-y-10 px-5">
                 <h1 class="text-5xl font-bold capitalize">Programing E- Learning System</h1>
                 <p class="text-gray-300 text-xl lg:w-4/5">Kent Beck once said, "Make it work, make it right and make it fast." Writting code that runs isn't difficult in programming, but writing code that's fucntional is difficult. You ought to becoming more adept at doing it quickly and creatively.</p>
-                <button class="px-3 py-1 bg-ter text-lg rounded border border-transparent hover:bg-transparent hover:border-white">Get Started</button>
+                <div><NuxtLink to="#cppTutorial" class="px-3 py-2 bg-ter text-lg rounded border border-transparent hover:bg-transparent hover:border-white">Get Started</NuxtLink></div>
             </div>
             <div class="w-1/2 lg:w-2/5">
-                <NuxtImg src="/images/cos.png" class="w-full" />
+                <NuxtImg src="/images/cos.png" class="w-full"  />
             </div>
         </div>
         <!-- system about -->
