@@ -4,19 +4,19 @@
           <h1 class="text-center text-2xl mb-10">Contact Us</h1>
           <div class="flex items-center gap-x-5">
             <Icon name="iconoir:phone-solid" class="text-3xl"  />
-            <p class="text-lg font-bold">09123456789</p>
+            <p class="text-sm lg:text-lg font-bold">09123456789</p>
           </div>
           <div class="flex items-center gap-x-5">
-            <Icon name="ion:location" class="text-4xl"/>
-            <p class="text-lg font-bold">Central Philippines State University, Brgy.Camingawan Kabankalan City</p>
+            <Icon name="ion:location" class="text-6xl lg:text-4xl"/>
+            <p class="text-sm lg:text-lg font-bold">Central Philippines State University, Brgy.Camingawan Kabankalan City</p>
           </div>
           <div class="flex items-center gap-x-5">
             <Icon name="garden:email-fill-16" class="text-3xl"  />
-            <p class="text-lg font-bold">rccitdepartment@gmail.com</p>
+            <p class="text-sm lg:text-lg font-bold">rccitdepartment@gmail.com</p>
           </div>
           <a a href="https://www.facebook.com/share/1DxBg9HWHT/" target="_blank"  class="flex items-center gap-x-5">
-            <Icon name="fe:facebook" class="text-3xl"  />
-            <p class="text-lg font-bold">CPSU College of Computer Studies - Main Campus </p>
+            <Icon name="fe:facebook" class="text-5xl lg:text-3xl"  />
+            <p class="text-sm lg:text-lg font-bold">CPSU College of Computer Studies - Main Campus </p>
           </a>
       </div>
   </div>
