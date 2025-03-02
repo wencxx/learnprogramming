@@ -16,7 +16,7 @@
                     <NuxtLink to="/compiler" class="p-1 hover:border-b-2 border-ter" :class="{ 'border-b-2': $route.path === '/compiler' }">Compiler</NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="/contact" class="p-1 hover:border-b-2 border-ter">Contact</NuxtLink>
+                    <NuxtLink class="p-1 hover:border-b-2 border-ter">Contact</NuxtLink>
                 </li>
             </ul>
             <Icon name="nrk:list" class="lg:hidden text-3xl cursor-pointer" @click="isOpenNav = true" />
@@ -38,7 +38,7 @@
                     <NuxtLink to="/compiler" class="p-1 hover:border-b-2 border-ter" :class="{ 'border-b-2': $route.path === '/compiler' }">Compiler</NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="/contact" class="p-1 hover:border-b-2 border-ter">Contact</NuxtLink>
+                    <NuxtLink class="p-1 hover:border-b-2 border-ter">Contact</NuxtLink>
                 </li>
             </ul>
         </nav>
